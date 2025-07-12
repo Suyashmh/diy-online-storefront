@@ -71,11 +71,11 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
 
           <div className="flex items-center gap-2">
             <span className="font-bold text-lg text-primary">
-              RM {product.price.toFixed(2)}
+              Rs {product.price.toLocaleString('en-IN')}
             </span>
             {product.originalPrice && (
               <span className="text-sm text-muted-foreground line-through">
-                RM {product.originalPrice.toFixed(2)}
+                Rs {product.originalPrice.toLocaleString('en-IN')}
               </span>
             )}
           </div>

@@ -10,8 +10,8 @@ export const products: Product[] = [
   {
     id: "1",
     name: "Professional Cordless Drill 18V with Battery Pack",
-    price: 89.90,
-    originalPrice: 109.90,
+    price: 7490,
+    originalPrice: 9190,
     image: drillImage,
     category: "Tools & Hardware",
     rating: 4.5,
@@ -22,7 +22,7 @@ export const products: Product[] = [
   {
     id: "2",
     name: "Steel Claw Hammer 16oz with Wooden Handle",
-    price: 24.90,
+    price: 2090,
     image: hammerImage,
     category: "Tools & Hardware",
     rating: 4.8,
@@ -33,8 +33,8 @@ export const products: Product[] = [
   {
     id: "3",
     name: "Professional Screwdriver Set 12-Piece Multi-Size",
-    price: 34.90,
-    originalPrice: 44.90,
+    price: 2890,
+    originalPrice: 3690,
     image: screwdriverImage,
     category: "Tools & Hardware",
     rating: 4.3,
@@ -45,7 +45,7 @@ export const products: Product[] = [
   {
     id: "4",
     name: "Premium Paint Brush Set for Interior & Exterior",
-    price: 19.90,
+    price: 1690,
     image: paintBrushImage,
     category: "Paint & Supplies",
     rating: 4.6,
@@ -56,7 +56,7 @@ export const products: Product[] = [
   {
     id: "5",
     name: "Heavy Duty Measuring Tape 25ft/7.5m",
-    price: 15.90,
+    price: 1290,
     image: measuringTapeImage,
     category: "Tools & Hardware",
     rating: 4.4,
@@ -67,8 +67,8 @@ export const products: Product[] = [
   {
     id: "6",
     name: "Safety Goggles Clear Anti-Fog Protection",
-    price: 12.90,
-    originalPrice: 18.90,
+    price: 1090,
+    originalPrice: 1590,
     image: safetyGogglesImage,
     category: "Safety & Security",
     rating: 4.2,
@@ -79,7 +79,7 @@ export const products: Product[] = [
   {
     id: "7",
     name: "LED Work Light 20W Rechargeable Portable",
-    price: 45.90,
+    price: 3790,
     image: drillImage, // Placeholder - reusing drill image
     category: "Electrical",
     rating: 4.7,
@@ -90,8 +90,8 @@ export const products: Product[] = [
   {
     id: "8",
     name: "Garden Hose 50ft with Spray Nozzle",
-    price: 39.90,
-    originalPrice: 49.90,
+    price: 3290,
+    originalPrice: 4190,
     image: hammerImage, // Placeholder - reusing hammer image
     category: "Home & Garden",
     rating: 4.1,
@@ -102,7 +102,7 @@ export const products: Product[] = [
   {
     id: "9",
     name: "Tool Storage Box 22-inch Heavy Duty",
-    price: 65.90,
+    price: 5490,
     image: screwdriverImage, // Placeholder - reusing screwdriver image
     category: "Storage & Organization",
     rating: 4.5,
@@ -113,7 +113,7 @@ export const products: Product[] = [
   {
     id: "10",
     name: "PVC Pipe Fittings Assorted Set",
-    price: 28.90,
+    price: 2390,
     image: paintBrushImage, // Placeholder - reusing paint brush image
     category: "Plumbing",
     rating: 4.3,

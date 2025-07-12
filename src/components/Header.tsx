@@ -1,8 +1,8 @@
-import { useState } from "react";
 import { Search, ShoppingCart, Menu, User, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
+import { useSecureSearch } from "@/hooks/useSecureSearch";
 
 interface HeaderProps {
   cartItems: number;
@@ -10,7 +10,7 @@ interface HeaderProps {
 }
 
 export function Header({ cartItems, onMenuClick }: HeaderProps) {
-  const [searchQuery, setSearchQuery] = useState("");
+  const { searchQuery, searchError, handleSearchChange, isValid } = useSecureSearch();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -42,9 +42,11 @@ export function Header({ cartItems, onMenuClick }: HeaderProps) {
               <Input
                 type="search"
                 placeholder="Search for tools, hardware, home & garden..."
-                className="pl-10 pr-4"
+                className={`pl-10 pr-4 ${searchError ? 'border-destructive' : ''}`}
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => handleSearchChange(e.target.value)}
+                aria-invalid={!isValid}
+                aria-describedby={searchError ? "search-error" : undefined}
               />
             </div>
           </div>
@@ -80,9 +82,11 @@ export function Header({ cartItems, onMenuClick }: HeaderProps) {
             <Input
               type="search"
               placeholder="Search products..."
-              className="pl-10 pr-4"
+              className={`pl-10 pr-4 ${searchError ? 'border-destructive' : ''}`}
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              aria-invalid={!isValid}
+              aria-describedby={searchError ? "search-error-mobile" : undefined}
             />
           </div>
         </div>
